@@ -1,6 +1,528 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Taylor Canada — Cybersecurity Engineer</title>
+<meta name="description" content="Operational Technology cybersecurity engineer specializing in ICS/SCADA defense, detection engineering, and security automation.">
+<meta name="author" content="Taylor Canada">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Taylor Canada — Cybersecurity Engineer">
+<meta property="og:description" content="ICS/SCADA defense, detection engineering, and security automation.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230B0714'/><g transform='translate(16 16) scale(.84) translate(-16 -16)'><path d='M7.4 14.2 5.2 5 11.6 11.4Q16 10.1 20.4 11.4L26.8 5 24.6 14.2C25.9 18.4 25.2 22.6 21.8 25.4 18.4 28.1 13.6 28.1 10.2 25.4 6.8 22.6 6.1 18.4 7.4 14.2Z' fill='none' stroke='%23C4A5FF' stroke-width='2.4' stroke-linejoin='round'/><circle cx='12.6' cy='18' r='1.7' fill='%23C4A5FF'/><circle cx='19.4' cy='18' r='1.7' fill='%23C4A5FF'/></g></svg>">
+</head>
+
 <body>
-<a href="https://ctf.catladytaylor.com">You lost?</a>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="bg-layers" aria-hidden="true">
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-scan"></div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <!-- brand mark: cat face outline -->
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor">
+          <path d="M7.4 14.2 L5.2 5 L11.6 11.4 Q16 10.1 20.4 11.4 L26.8 5 L24.6 14.2
+                   C25.9 18.4 25.2 22.6 21.8 25.4 C18.4 28.1 13.6 28.1 10.2 25.4
+                   C6.8 22.6 6.1 18.4 7.4 14.2 Z"
+                stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12.6" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+          <circle cx="19.4" cy="18" r="1.5" fill="currentColor" stroke="none"/>
+          <path d="M14.6 20.9 L17.4 20.9 L16 22.6 Z" fill="currentColor" stroke="none"/>
+        </svg>
+      </span>
+      <span class="brand__text">Taylor Canada</span>
+    </a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" id="navMenu" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certs</a></li>
+      </ul>
+      <a class="btn btn--sm btn--primary" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Open to opportunities</p>
+
+        <h1 class="hero__title">Taylor Canada</h1>
+
+        <p class="hero__role">Cybersecurity Engineer</p>
+
+        <p class="hero__typed mono" aria-hidden="true"
+           data-typewriter='["securing theme park control systems","building detection pipelines at scale","automating the boring parts of defense"]'>
+          <span class="hero__prompt">&gt;</span> <span class="hero__typed-out"></span><span class="caret"></span>
+        </p>
+
+        <p class="hero__pitch">
+          Cybersecurity engineer with 7 years of experience spanning security engineering, data engineering, and automation. Specializes in designing, operating, and troubleshooting large-scale on-premises Elastic Stack environments supporting SIEM, operational monitoring, and incident investigation. Experienced with Elasticsearch, Kibana, Logstash, Elastic Agent, Fleet, Chef Infra, Python, Linux, GitLab CI/CD, TLS/PKI, data pipelines, web security, and email security.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#contact">
+            Contact me
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="TCanada_Resume_Pretty.pdf" download>
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Download résumé
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero__panel" aria-label="Profile summary">
+        <div class="panel">
+          <div class="panel__bar">
+            <span class="panel__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mono panel__file">profile.yaml</span>
+          </div>
+          <pre class="panel__code mono"><code><span class="c-key">name</span>: <span class="c-str">Taylor Canada</span>
+<span class="c-key">role</span>: <span class="c-str">Cybersecurity Engineer</span>
+<span class="c-key">location</span>: <span class="c-str">Orlando, FL</span>
+<span class="c-key">focus</span>:
+  - <span class="c-str">ICS / OT defense</span>
+  - <span class="c-str">detection engineering</span>
+  - <span class="c-str">security automation</span>
+<span class="c-key">stack</span>:
+  - <span class="c-str">Elastic / Logstash</span>
+  - <span class="c-str">Python, Ruby, Bash</span>
+  - <span class="c-str">Palo Alto, Zabbix, PKI</span>
+<span class="c-key">status</span>: <span class="c-str">open_to_roles</span></code></pre>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section" id="about">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="mono section__index">01</p>
+        <h2 class="section__title">About</h2>
+      </header>
+
+      <div class="about">
+        <div class="about__body reveal">
+          <p>
+            I work on the operational technology side of cybersecurity, building solutions to secure, detect, 
+            and automate the tools it takes to run the magic of Walt Disney World. Most of my time is spent building 
+            the pipelines that move data and designing alerts to make that data meaningful. When I'm not managing the SIEM,
+            I spend my time finding automation opportunities for our team and creating the solution for it. I have used Python and Ruby
+            to automate tasks for Cyber Project Management, Vulnerability Management, and Certificate Enrollment.
+          </p>
+        </div>
+
+        <ul class="about__facts reveal">
+          <li><span class="mono about__k">Focus</span><span class="about__v">OT security engineering</span></li>
+          <li><span class="mono about__k">Based in</span><span class="about__v">Orlando, FL</span></li>
+          <li><span class="mono about__k">Working style</span><span class="about__v">Hands-on, automation-first</span></li>
+          <li><span class="mono about__k">Currently learning</span><span class="about__v">Chef Infra with CI/CD</span></li>
+          <li><span class="mono about__k">Availability</span><span class="about__v">Open to conversations</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="mono section__index">02</p>
+        <h2 class="section__title">Technical skills</h2>
+        <p class="section__sub">Grouped by what I actually use in production, not what I've read about.</p>
+      </header>
+
+      <div class="cards cards--skills">
+        <article class="card reveal">
+          <h3 class="card__title"><span class="card__icon" aria-hidden="true">⬡</span> Detection &amp; Monitoring</h3>
+          <ul class="tags">
+            <li>Elastic Stack</li><li>Logstash pipelines</li><li>SIEM tuning</li>
+            <li>Zabbix</li><li>MITRE ATT&amp;CK for ICS</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title"><span class="card__icon" aria-hidden="true">⬡</span> Automation &amp; Scripting</h3>
+          <ul class="tags">
+            <li>Python</li><li>Ruby</li><li>Cortex XSOAR</li><li>REST API integration</li><li>CI pipelines</li><li>Chef Infra</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title"><span class="card__icon" aria-hidden="true">⬡</span> Network &amp; Infrastructure</h3>
+          <ul class="tags">
+            <li>Palo Alto NGFW</li><li>PKI / cert lifecycle</li>
+            <li>Linux administration</li><li>Secrets management</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title"><span class="card__icon" aria-hidden="true">⬡</span>Enterprise Security</h3>
+          <ul class="tags">
+            <li>Tenable</li><li>Symantec Web Proxy</li>
+            <li>Proofpoint Email Security</li><li>Cortex XDR</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <h3 class="card__title"><span class="card__icon" aria-hidden="true">⬡</span> Program &amp; People</h3>
+          <ul class="tags">
+            <li>Security awareness</li><li>Runbook authoring</li>
+            <li>Cross-team enablement</li><li>Training</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="mono section__index">03</p>
+        <h2 class="section__title">Experience</h2>
+      </header>
+
+      <ol class="timeline">
+        <li class="tl reveal">
+          <div class="tl__marker" aria-hidden="true"></div>
+          <div class="tl__body">
+            <p class="mono tl__period">2024 — Present</p>
+            <h3 class="tl__role">Cybersecurity Technical Specialist</h3>
+            <p class="tl__org">The Walt Disney Company <span class="tl__sep">·</span> Orlando, FL</p>
+            <ul class="bullets">
+              <li>Built <em>Chef Infra Cookbooks</em> that reduced <em>Logstash deployment time</em> from <em>6 hours to 1 hour.</em> </li>
+              <li>Designed and built <em>certificate lifecycle automation</em> to rollout to <em>4k+ endpoints</em> allowing attraction engineers to deploy devices days faster.</li>
+              <li>Matured the Elastic Stack by planning and implementing a <em>major version upgrade</em> and redesigning indices to be <em>data streams</em> which drove storage utilization down by <em>30%</em>.</li>
+            </ul>
+            <ul class="tags tags--sm">
+              <li>Elastic</li><li>Python</li><li>Automation</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl reveal">
+          <div class="tl__marker" aria-hidden="true"></div>
+          <div class="tl__body">
+            <p class="mono tl__period">2021-2024</p>
+            <h3 class="tl__role">Information Security Engineer</h3>
+            <p class="tl__org">USAA <span class="tl__sep">·</span> San Antonio, TX</p>
+            <ul class="bullets">
+              <li>Contributed to the migration of the on-prem Proofpoint email security stack to the cloud.</li>
+              <li>Created and maintained security audit controls, governance documentation, and operational procedures</li>
+              <li>Gathered and presented evidence that supported compliance to regulatory controls to both internal and external auditors.</li>
+              <li>Completed hundreds of requests for web and email traffic issues.</li>
+              <li>Led the rollout of Symantec's browser isolation which allowed the financial crimes team to safely navigate riskier websites for investigations.</li>
+            </ul>
+            <ul class="tags tags--sm">
+              <li>Email</li><li>Networking</li><li>Controls</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="tl reveal">
+          <div class="tl__marker" aria-hidden="true"></div>
+          <div class="tl__body">
+            <p class="mono tl__period">2019-2021</p>
+            <h3 class="tl__role">Data Engineer</h3>
+            <p class="tl__org">USAA <span class="tl__sep">·</span> San Antonio, TX</p>
+            <ul class="bullets">
+              <li>Led a team initiative to migrate source-code repositories to GitLab and adopt GitLab CI/CD deployment processes.</li>
+              <li>Developed Python and SQL applications that extracted, transformed, and loaded large datasets from Netezza databases.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <!--<section class="section" id="projects">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="mono section__index">04</p>
+        <h2 class="section__title">Selected work</h2>
+        <p class="section__sub">
+          COMING SOON - WIP
+        </p>
+      </header>
+
+       <div class="filters reveal" role="group" aria-label="Filter projects by tag">
+        <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="automation" aria-pressed="false">Automation</button>
+        <button class="chip" data-filter="detection" aria-pressed="false">Detection</button>
+        <button class="chip" data-filter="ot" aria-pressed="false">OT / ICS</button>
+        <button class="chip" data-filter="tooling" aria-pressed="false">Tooling</button>
+      </div>
+      <div class="cards cards--projects" id="projectGrid">
+        <article class="card card--project reveal" data-tags="detection automation">
+          <div class="card__top">
+            <span class="mono card__tagline">detection pipeline</span>
+            <span class="card__status">Production</span>
+          </div>
+          <h3 class="card__title">Log Ingestion Pipeline Framework</h3>
+          <p class="card__desc">
+            A templated Logstash pipeline system that standardized parsing across dozens of
+            heterogeneous sources, replacing one-off configs with reviewable, version-controlled modules.
+          </p>
+          <ul class="tags tags--sm">
+            <li>Logstash</li><li>Elastic</li><li>Python</li>
+          </ul>
+          <p class="card__links">
+            <a href="#" class="link">Case study</a>
+            <a href="#" class="link">Code</a>
+          </p>
+        </article>
+
+        <article class="card card--project reveal" data-tags="ot detection">
+          <div class="card__top">
+            <span class="mono card__tagline">ics visibility</span>
+            <span class="card__status">Production</span>
+          </div>
+          <h3 class="card__title">OT Asset Visibility Initiative</h3>
+          <p class="card__desc">
+            Brought passive monitoring to control networks with no prior instrumentation, producing a
+            live asset inventory and the first reliable baseline of normal plant traffic.
+          </p>
+          <ul class="tags tags--sm">
+            <li>Passive discovery</li><li>Purdue model</li><li>Zabbix</li>
+          </ul>
+          <p class="card__links"><a href="#" class="link">Case study</a></p>
+        </article>
+
+        <article class="card card--project reveal" data-tags="automation tooling">
+          <div class="card__top">
+            <span class="mono card__tagline">certificate lifecycle</span>
+            <span class="card__status">Internal tool</span>
+          </div>
+          <h3 class="card__title">Certificate Lifecycle Automation</h3>
+          <p class="card__desc">
+            Automated issuance, renewal, and expiry alerting against an internal PKI, eliminating a
+            recurring class of outage caused by silently expiring certificates.
+          </p>
+          <ul class="tags tags--sm">
+            <li>PKI</li><li>Ruby</li><li>REST APIs</li>
+          </ul>
+          <p class="card__links"><a href="#" class="link">Write-up</a></p>
+        </article>
+
+        <article class="card card--project reveal" data-tags="tooling automation">
+          <div class="card__top">
+            <span class="mono card__tagline">vuln reporting</span>
+            <span class="card__status">Internal tool</span>
+          </div>
+          <h3 class="card__title">Risk-Based Vulnerability Reporting</h3>
+          <p class="card__desc">
+            Rebuilt vulnerability reporting around exploitability and asset criticality instead of raw
+            CVSS, giving site teams a remediation list short enough to actually finish.
+          </p>
+          <ul class="tags tags--sm">
+            <li>Tenable API</li><li>Python</li><li>Data modeling</li>
+          </ul>
+          <p class="card__links"><a href="#" class="link">Write-up</a></p>
+        </article>
+      </div>
+
+      <p class="empty mono" id="projectEmpty" hidden>// no projects match that filter</p>
+    </div> 
+  </section> -->
+
+  <!-- ==================== CERTIFICATIONS / EDUCATION ==================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="mono section__index">05</p>
+        <h2 class="section__title">Certifications &amp; education</h2>
+      </header>
+      <!-- ============================================================
+           BADGE CARDS
+
+           To add an Accredible / credential.net badge:
+             1. Open the credential, click "Add to your website" and copy the
+                numeric badge id out of the embed snippet.
+             2. Point src at
+                https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/<ID>
+             3. Set the wrapping link's href to the public credential URL so a
+                recruiter can actually verify it. An unverifiable badge image
+                is worth less than plain text.
+           Keep width/height at 200x200 — that's the native size the endpoint
+           serves, and it reserves space so the grid doesn't jump while loading.
+           If a badge is dark-inked and vanishes, add class="badge__img
+           badge__img--plate".
+           ============================================================ -->
+      <div class="badges">
+        <a class="badge reveal" href="https://certified.elastic.co/c2203151-1e1f-4c44-8d38-f50eb209c92f#acc.AV7NFMsu" target="_blank" rel="noopener">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/171233958"
+                 alt="Elastic Certified Analyst badge"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="ECA">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">Elastic Certified Analyst</span>
+            <span class="badge__meta mono">Elastic · 2026</span>
+            <span class="badge__verify">
+              Verify
+              <svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </a>
+        <a class="badge reveal" href="https://www.credly.com/badges/33b0b648-1e11-409c-a3de-932fd4064644/public_url" target="_blank" rel="noopener">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://images.credly.com/size/340x340/images/0a851e7e-97e4-42da-9289-12f94c07e461/image.png"
+                 alt="GIAC Response and Industrial Defense (GRID)"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="CERT">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">GIAC Response and Industrial Defense (GRID)</span>
+            <span class="badge__meta mono">GIAC · 2024</span>
+            <span class="badge__verify">
+              Verify
+              <svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </a>
+        <a class="badge reveal" href="https://www.credly.com/badges/32945127-a20c-4baa-bcae-e1cd667fc57d/public_url" target="_blank" rel="noopener">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://images.credly.com/size/340x340/images/14667922-c91c-40b6-91d6-92f932f575a2/image.png"
+                 alt="GIAC Python Coder (GPYC)"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="CERT">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">GIAC Python Coder (GPYC)</span>
+            <span class="badge__meta mono">GIAC · 2023</span>
+            <span class="badge__verify">
+              Verify
+              <svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </a>
+        <a class="badge reveal" href="https://www.credly.com/badges/5fcb3459-4799-44f9-af2b-19658cc051bd/public_url" target="_blank" rel="noopener">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://images.credly.com/size/340x340/images/3521f173-a24f-4def-a061-0f09818c9039/image.png"
+                 alt="GIAC Critical Controls Certification (GCCC)"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="CERT">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">GIAC Critical Controls Certification (GCCC)</span>
+            <span class="badge__meta mono">GIAC · 2023</span>
+            <span class="badge__verify">
+              Verify
+              <svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </a>
+        <a class="badge reveal" href="https://www.credly.com/badges/51354afa-c09d-4bdf-aac7-11e01f67c3fb/public_url" target="_blank" rel="noopener">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://images.credly.com/size/340x340/images/f535241f-edd3-4dd2-93fd-2243dbc0826e/image.png"
+                 alt="GIAC Web Application Penetration Tester (GWAPT)"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="CERT">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">GIAC Web Application Penetration Tester (GWAPT)</span>
+            <span class="badge__meta mono">GIAC · 2021</span>
+            <span class="badge__verify">
+              Verify
+              <svg width="10" height="10" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+          </span>
+        </a>
+
+        <!-- Education: text tile, no badge image. -->
+        <div class="badge reveal">
+          <span class="badge__media">
+            <img class="badge__img"
+                 src="https://www.utsa.edu/_files/images/logos/ut-san-antonio-crest.svg"
+                 alt="UTSA"
+                 width="200" height="200" loading="lazy" decoding="async"
+                 data-abbr="EDU">
+          </span>
+          <span class="badge__body">
+            <span class="badge__name">Bachelor of Business Administration, Cyber Security and Information Systems</span>
+            <span class="badge__meta mono">University of Texas San Antonio · 2019</span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="contact reveal">
+        <p class="mono section__index">06</p>
+        <h2 class="contact__title">Let's talk</h2>
+        <p class="contact__sub">
+          I'm interested in continuing my growth in data and security engineering roles where automation and
+          detection quality matter. If that's what you're hiring for, I'd like to hear about it.
+        </p>
+
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:taylorjcanada@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m2.6 4.5 5.4 4 5.4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            taylorjcanada@gmail.com
+          </a>
+          <button class="btn btn--ghost" id="copyEmail" data-email="taylorjcanada@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8" height="9" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 5V3.5A1.5 1.5 0 0 0 9 2H4.5A1.5 1.5 0 0 0 3 3.5V10" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span id="copyEmailLabel">Copy address</span>
+          </button>
+        </div>
+
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/taylorjcanada" class="link">LinkedIn</a></li>
+          <li><a href="TCanada_Resume_Pretty.pdf" class="link" download>Résumé (PDF)</a></li>
+        </ul>
+        <p class="visually-hidden" role="status" id="copyStatus"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="mono">© <span id="year">2026</span> Taylor Canada</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
