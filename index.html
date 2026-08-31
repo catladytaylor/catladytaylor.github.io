@@ -265,73 +265,67 @@
   </section>
 
   <!-- ==================== PROJECTS ==================== -->
-  <!--<section class="section" id="projects">
+  <section class="section" id="projects">
     <div class="container">
       <header class="section__head reveal">
         <p class="mono section__index">04</p>
         <h2 class="section__title">Selected work</h2>
-        <p class="section__sub">
-          COMING SOON - WIP
-        </p>
       </header>
 
-       <div class="filters reveal" role="group" aria-label="Filter projects by tag">
+       <!-- No filtering for now.
+      <div class="filters reveal" role="group" aria-label="Filter projects by tag">
         <button class="chip is-active" data-filter="all" aria-pressed="true">All</button>
         <button class="chip" data-filter="automation" aria-pressed="false">Automation</button>
         <button class="chip" data-filter="detection" aria-pressed="false">Detection</button>
-        <button class="chip" data-filter="ot" aria-pressed="false">OT / ICS</button>
         <button class="chip" data-filter="tooling" aria-pressed="false">Tooling</button>
-      </div>
+      </div> -->
       <div class="cards cards--projects" id="projectGrid">
-        <article class="card card--project reveal" data-tags="detection automation">
+        <article class="card card--project reveal" data-tags="tooling automation">
           <div class="card__top">
-            <span class="mono card__tagline">detection pipeline</span>
+            <span class="mono card__tagline">logstash deployment</span>
             <span class="card__status">Production</span>
           </div>
-          <h3 class="card__title">Log Ingestion Pipeline Framework</h3>
+          <h3 class="card__title">Automated Logstash Deployment</h3>
           <p class="card__desc">
-            A templated Logstash pipeline system that standardized parsing across dozens of
-            heterogeneous sources, replacing one-off configs with reviewable, version-controlled modules.
+            Due to the nature of the network segmentation, Logstash deployment happened frequently and each manual deploy was different than the last. I automated the deployment using Gitlab and Chef Automate to deploy a logstash device in under an hour instead of the 4-6 hours it took previously. This also solved the issue of configuration drift that was seen among Logstash devices.
           </p>
           <ul class="tags tags--sm">
-            <li>Logstash</li><li>Elastic</li><li>Python</li>
+            <li>Logstash</li><li>Elastic</li><li>Ruby</li>
           </ul>
           <p class="card__links">
-            <a href="#" class="link">Case study</a>
-            <a href="#" class="link">Code</a>
+            <a href="write-ups.html#logstash-deployment" class="link">Read the write-up</a>
           </p>
         </article>
 
-        <article class="card card--project reveal" data-tags="ot detection">
+        <article class="card card--project reveal" data-tags="tooling automation">
           <div class="card__top">
-            <span class="mono card__tagline">ics visibility</span>
-            <span class="card__status">Production</span>
+            <span class="mono card__tagline">project management</span>
+            <span class="card__status">Internal Tool</span>
           </div>
-          <h3 class="card__title">OT Asset Visibility Initiative</h3>
+          <h3 class="card__title">Automated Project Spend Tracking</h3>
           <p class="card__desc">
-            Brought passive monitoring to control networks with no prior instrumentation, producing a
-            live asset inventory and the first reliable baseline of normal plant traffic.
+            Built an internal tool for estimating and tracking project involvement for the Cyber team. The tool accepts SAP exports for labor and spend and maps them to an attraction project to compare to the estimated figures. The team's project managers were doing this manually previously with various spreadsheets.
           </p>
           <ul class="tags tags--sm">
-            <li>Passive discovery</li><li>Purdue model</li><li>Zabbix</li>
+            <li>Project Management</li><li>Automation</li><li>Python</li>
           </ul>
-          <p class="card__links"><a href="#" class="link">Case study</a></p>
+          <!-- <p class="card__links"><a href="write-ups.html#insert-id" class="link">Read the write-up</a></p> -->
         </article>
 
-        <article class="card card--project reveal" data-tags="automation tooling">
+        <article class="card card--project reveal" data-tags="tooling automation">
           <div class="card__top">
             <span class="mono card__tagline">certificate lifecycle</span>
-            <span class="card__status">Internal tool</span>
+            <span class="card__status">Production</span>
           </div>
           <h3 class="card__title">Certificate Lifecycle Automation</h3>
           <p class="card__desc">
-            Automated issuance, renewal, and expiry alerting against an internal PKI, eliminating a
-            recurring class of outage caused by silently expiring certificates.
+            Automated issuance and renewal against an internal PKI, eliminating a
+            recurring outages caused by silently expiring certificates. Built in Chef Automate to allow for easy deployment to devices that were already using Chef to deploy.
           </p>
           <ul class="tags tags--sm">
             <li>PKI</li><li>Ruby</li><li>REST APIs</li>
           </ul>
-          <p class="card__links"><a href="#" class="link">Write-up</a></p>
+          <!-- <p class="card__links"><a href="write-ups.html#insert-id" class="link">Read the write-up</a></p> -->
         </article>
 
         <article class="card card--project reveal" data-tags="tooling automation">
@@ -347,13 +341,43 @@
           <ul class="tags tags--sm">
             <li>Tenable API</li><li>Python</li><li>Data modeling</li>
           </ul>
-          <p class="card__links"><a href="#" class="link">Write-up</a></p>
+          <!-- <p class="card__links"><a href="write-ups.html#insert-id" class="link">Read the write-up</a></p> -->
+        </article>
+
+        <article class="card card--project reveal" data-tags="personal projects">
+          <div class="card__top">
+            <span class="mono card__tagline">spirit box</span>
+            <span class="card__status">Personal Project</span>
+          </div>
+          <h3 class="card__title">Replica of Phasmophobia's Spirit Box</h3>
+          <p class="card__desc">
+            Built a working replica of a spirit box from the video game Phasmophobia complete with voice recognition and sounds from the game.
+          </p>
+          <ul class="tags tags--sm">
+            <li>Hardware</li><li>Engineering</li><li>Electronics</li>
+          </ul>
+          <!-- <p class="card__links"><a href="write-ups.html#insert-id" class="link">Read the write-up</a></p> -->
+        </article>
+
+        <article class="card card--project reveal" data-tags="personal projects">
+          <div class="card__top">
+            <span class="mono card__tagline">bsides badge</span>
+            <span class="card__status">Personal Project</span>
+          </div>
+          <h3 class="card__title">Bsides Hardware Badge 2024</h3>
+          <p class="card__desc">
+            Designed and built the hardware badge for Bsides San Antonio 2024. One hundred badges were sold as an upgrade to the conference ticket and all profits went to Bsides SATX.
+          </p>
+          <ul class="tags tags--sm">
+            <li>Volunteer</li><li>PCB Design</li><li>Electronics</li>
+          </ul>
+          <!-- <p class="card__links"><a href="write-ups.html#insert-id" class="link">Read the write-up</a></p> -->
         </article>
       </div>
 
       <p class="empty mono" id="projectEmpty" hidden>// no projects match that filter</p>
     </div> 
-  </section> -->
+  </section>
 
   <!-- ==================== CERTIFICATIONS / EDUCATION ==================== -->
   <section class="section" id="certifications">
@@ -362,22 +386,6 @@
         <p class="mono section__index">05</p>
         <h2 class="section__title">Certifications &amp; education</h2>
       </header>
-      <!-- ============================================================
-           BADGE CARDS
-
-           To add an Accredible / credential.net badge:
-             1. Open the credential, click "Add to your website" and copy the
-                numeric badge id out of the embed snippet.
-             2. Point src at
-                https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/<ID>
-             3. Set the wrapping link's href to the public credential URL so a
-                recruiter can actually verify it. An unverifiable badge image
-                is worth less than plain text.
-           Keep width/height at 200x200 — that's the native size the endpoint
-           serves, and it reserves space so the grid doesn't jump while loading.
-           If a badge is dark-inked and vanishes, add class="badge__img
-           badge__img--plate".
-           ============================================================ -->
       <div class="badges">
         <a class="badge reveal" href="https://certified.elastic.co/c2203151-1e1f-4c44-8d38-f50eb209c92f#acc.AV7NFMsu" target="_blank" rel="noopener">
           <span class="badge__media">
